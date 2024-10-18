@@ -3,84 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roadmap - Scape From Hell</title>
+  <title>Roadmap - Jogo de Terror 3D</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="https://github.com/SergioBole-GameDevelopment/UnityProjetos/blob/main/logos%20e%20imagens/favicon.png" type="image/x-icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="../logos e imagens/favicon.png" type="image/png">
 </head>
 <body>
-  <header>
-    <div class="card">
-        <img class="card-img" src="https://github.com/SergioBole-GameDevelopment/UnityProjetos/blob/main/logos%20e%20imagens/linkedin_banner_image_1.png" alt="">
-        <div class="card-img-overlay">
-            <h5 class="card-title">Desenvolvimento de Games - Unity C#</h5>
-            <p class="card-text">Content</p>
-        </div>
-    </div>
-    <hr>
-    <h1>🎮 Roadmap - Scape From Hell</h1>
-    <p>Fique por dentro do progresso do nosso projeto de forma visual e organizada!</p>
-    <small><i>Lembrando:</i>Este projeto é para fins didático, então o que mais terá é bug !! </small>
+
+  <!-- Banner -->
+  <header class="banner text-center">
+    <!-- <img src="../logos e imagens/linkedin_banner_image_1.png" alt="Jogo de Terror 3D" class="logo"> -->
+    <h1 class="display-4 text-light">Jogo de Terror 3D</h1>
+    <p class="lead text-light">Explore, sobreviva e escape... se puder!</p>
   </header>
 
-  <section class="roadmap">
-    <div class="phase completed">
-      <h2>Fase 1: Configuração Inicial</h2>
-      <ul>
-        <li>✅ Configuração do Projeto</li>
-        <li>✅ Configuração do .gitignore</li>
-        <li>✅ Importação de Assets</li>
-      </ul>
-    </div>
+  <!-- Conteúdo Principal -->
+  <main class="container mt-5">
+    <section class="roadmap">
+      <h2 class="text-center mb-5">Progresso do Projeto</h2>
+      <div class="timeline">
 
-    <div class="phase completed">
-      <h2>Fase 2: Movimentação e Animação do Player</h2>
-      <ul>
-        <li>🚧 Movimentação (andar, correr, pular)</li>
-        <li>❌ Configuração de Animações</li>
-      </ul>
-    </div>
+        <div class="card mb-4 completed">
+          <div class="card-body">
+            <h3>Fase 1: Configuração Inicial</h3>
+            <ul>
+              <li>✅ Configuração do Projeto</li>
+              <li>✅ Configuração do .gitignore</li>
+              <li>✅ Importação de Assets</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="phase completed">
-      <h2>Fase 3: IA do Inimigo</h2>
-      <ul>
-        <li>❌ Criação da IA para perseguição</li>
-        <li>❌ Configuração da área de detecção</li>
-        <li>❌ Mecânica de ataque (perda de moedas)</li>
-      </ul>
-    </div>
+        <div class="card mb-4 completed">
+          <div class="card-body">
+            <h3>Fase 2: Movimentação e Animação do Player</h3>
+            <ul>
+              <li>🚧 Movimentação (andar, correr, pular)</li>
+              <li>🚧 Configuração de Animações</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="phase in-progress">
-      <h2>Fase 4: Itens Coletáveis e Pontuação</h2>
-      <ul>
-        <li>❌ Spawn Aleatório de Moedas</li>
-        <li>❌ Coleta e Destruição de Prefabs</li>
-        <li>❌ Sistema de Pontuação</li>
-        <li>❌ Implementação da Chave e Porta</li>
-      </ul>
-    </div>
+        <div class="card mb-4 completed">
+          <div class="card-body">
+            <h3>Fase 3: IA do Inimigo</h3>
+            <ul>
+              <li>❌ IA de perseguição</li>
+              <li>❌ Área de detecção configurada</li>
+              <li>❌ Ataque (perda de moedas)</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="phase not-started">
-      <h2>Fase 5: Criação de Cenário</h2>
-      <ul>
-        <li>❌ Desenvolvimento do Mapa</li>
-        <li>❌ Configuração de Iluminação</li>
-      </ul>
-    </div>
+        <div class="card mb-4 in-progress">
+          <div class="card-body">
+            <h3>Fase 4: Itens Coletáveis e Pontuação</h3>
+            <ul>
+              <li>❌ Spawn Aleatório de Moedas</li>
+              <li>❌ Coleta e Destruição de Prefabs</li>
+              <li>❌ Sistema de Pontuação</li>
+              <li>❌ Chave e Porta</li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="phase not-started">
-      <h2>Fase 6: Polimento e Testes</h2>
-      <ul>
-        <li>❌ Testes de Jogabilidade</li>
-        <li>❌ Ajustes Finais</li>
-      </ul>
-    </div>
-  </section>
+        <div class="card mb-4 not-started">
+          <div class="card-body">
+            <h3>Fase 5: Criação de Cenário</h3>
+            <ul>
+              <li>❌ Desenvolvimento do Mapa</li>
+              <li>❌ Configuração de Iluminação</li>
+            </ul>
+          </div>
+        </div>
 
-  <footer>
-    <p>👾 Projeto com fins didáticos. Bugs são esperados! Contribua no <a href="https://github.com/usuario/jogo-de-terror">GitHub</a>.</p>
+        <div class="card mb-4 not-started">
+          <div class="card-body">
+            <h3>Fase 6: Polimento e Testes</h3>
+            <ul>
+              <li>❌ Testes de Jogabilidade</li>
+              <li>❌ Ajustes Finais</li>
+            </ul>
+          </div>
+        </div>
 
-    <p>Entre na nossa <a href="https://discord.gg/8pu9RgGBwn">Comunidade no Discord</a>!</p>
-    <center><i><small>Sergio Barros | Desenvolvimento de Games - Unity C#</small></i></center>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 py-3">
+    <p>👾 Projeto com fins didáticos. Bugs são esperados!</p>
+    <p>Contribua no <a href="https://github.com/usuario/jogo-de-terror" target="_blank">GitHub</a> ou participe na <a href="https://discord.gg/8pu9RgGBwn" target="_blank">Comunidade no Discord</a>!</p>
   </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
