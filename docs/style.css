@@ -1,0 +1,78 @@
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  section.roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .phase {
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #30363d;
+  }
+  
+  .completed {
+    background-color: #161b22;
+    border-left: 5px solid #2ea043;
+  }
+  
+  .in-progress {
+    background-color: #161b22;
+    border-left: 5px solid #d29922;
+  }
+  
+  .not-started {
+    background-color: #161b22;
+    border-left: 5px solid #f85149;
+  }
+  
+  ul {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  li::before {
+    content: "•";
+    color: #58a6ff;
+    margin-right: 8px;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  footer a {
+    color: #58a6ff;
+    text-decoration: none;
+  }
+  
